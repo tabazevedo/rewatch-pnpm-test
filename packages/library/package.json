@@ -1,5 +1,6 @@
 {
   "name": "@monorepo/library",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "res:build": "rescript",

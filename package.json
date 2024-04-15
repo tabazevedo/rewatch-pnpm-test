@@ -6,7 +6,7 @@
     "watch": "rewatch watch"
   },
   "devDependencies": {
-    "@monorepo/main": "workspace:*",
+    "@monorepo/main": "1.0.0",
     "@rolandpeelen/rewatch": "^1.0.1",
     "rescript": "^11.1.0-rc.7"
   }

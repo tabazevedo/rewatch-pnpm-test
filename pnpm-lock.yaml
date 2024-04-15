@@ -9,7 +9,7 @@ importers:
   .:
     devDependencies:
       '@monorepo/main':
-        specifier: workspace:*
+        specifier: 1.0.0
         version: link:packages/main
       '@rolandpeelen/rewatch':
         specifier: ^1.0.1
@@ -40,7 +40,7 @@ importers:
   packages/main:
     dependencies:
       '@monorepo/library':
-        specifier: workspace:*
+        specifier: 1.0.0
         version: link:../library
       '@rescript/core':
         specifier: ^1.2.0
