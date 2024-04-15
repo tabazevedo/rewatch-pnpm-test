@@ -1,3 +1,3 @@
 let log = x => {
-  Console.log("message:: " ++ x)
+  %log.info("Info message")
 }

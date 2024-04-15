@@ -10,9 +10,11 @@
   },
   "suffix": ".res.mjs",
   "bs-dependencies": [
-    "@rescript/core"
+    "@rescript/core",
+    "rescript-logger"
   ],
   "bsc-flags": [
     "-open RescriptCore"
-  ]
+  ],
+  "ppx-flags": ["rescript-logger/ppx"]
 }
