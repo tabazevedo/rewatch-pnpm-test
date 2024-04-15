@@ -1,0 +1,62 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    devDependencies:
+      '@monorepo/main':
+        specifier: workspace:*
+        version: link:packages/main
+      '@rolandpeelen/rewatch':
+        specifier: ^1.0.1
+        version: 1.0.1
+      rescript:
+        specifier: ^11.1.0-rc.7
+        version: 11.1.0-rc.7
+
+  packages/library:
+    dependencies:
+      '@rescript/core':
+        specifier: ^1.2.0
+        version: 1.2.0(rescript@11.1.0-rc.7)
+      rescript:
+        specifier: ^11.1.0-rc.7
+        version: 11.1.0-rc.7
+
+  packages/main:
+    dependencies:
+      '@monorepo/library':
+        specifier: workspace:*
+        version: link:../library
+      '@rescript/core':
+        specifier: ^1.2.0
+        version: 1.2.0(rescript@11.1.0-rc.7)
+      rescript:
+        specifier: ^11.1.0-rc.7
+        version: 11.1.0-rc.7
+
+packages:
+
+  /@rescript/core@1.2.0(rescript@11.1.0-rc.7):
+    resolution: {integrity: sha512-/crGFHKPGeCCrwkVZQ0ugJZxjh79pT5nIPdlfITwiQvO4FoxwnABRiHWiJ7bi2H0RiU1KRrUtVwA5CQV4hJVnQ==}
+    peerDependencies:
+      rescript: '>=11.0.0 || ^11.1.0-rc.2'
+    dependencies:
+      rescript: 11.1.0-rc.7
+    dev: false
+
+  /@rolandpeelen/rewatch@1.0.1:
+    resolution: {integrity: sha512-X+tEt/KbXVre4EUcKaJefLGw5f405yw+jfB0el5ZX1+0KTDfRai6Hk+DG9SlbC0TFljPNkEOI5wAfMq+gqawuQ==}
+    hasBin: true
+    requiresBuild: true
+    dev: true
+
+  /rescript@11.1.0-rc.7:
+    resolution: {integrity: sha512-4MsOugrSaS9Sh4grCVwNhOJLv1KZ7gTtN5KsV0ctPvzGyCaco7Ftwqo4uVap7xXuzLjgALPQdYBdElBgTZRvaQ==}
+    engines: {node: '>=10'}
+    hasBin: true
+    requiresBuild: true

@@ -1,0 +1,22 @@
+{
+  "name": "@monorepo/main",
+  "sources": {
+    "dir": "src",
+    "subdirs": true
+  },
+  "package-specs": {
+    "module": "es6",
+    "in-source": true
+  },
+  "suffix": ".res.mjs",
+  "pinned-dependencies": [
+    "@monorepo/library"
+  ],
+  "bs-dependencies": [
+    "@rescript/core",
+    "@monorepo/library"
+  ],
+  "bsc-flags": [
+    "-open RescriptCore"
+  ]
+}

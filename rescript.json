@@ -1,0 +1,11 @@
+{
+  "name": "@monorepo/root",
+  "sources": [],
+  "package-specs": {
+    "module": "es6",
+    "in-source": true
+  },
+  "suffix": ".res.mjs",
+  "bs-dependencies": ["@monorepo/main"],
+  "bsc-flags": []
+}

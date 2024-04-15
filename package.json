@@ -1,0 +1,13 @@
+{
+  "name": "@monorepo/root",
+  "private": true,
+  "scripts": {
+    "build": "rewatch build",
+    "watch": "rewatch watch"
+  },
+  "devDependencies": {
+    "@monorepo/main": "workspace:*",
+    "@rolandpeelen/rewatch": "^1.0.1",
+    "rescript": "^11.1.0-rc.7"
+  }
+}

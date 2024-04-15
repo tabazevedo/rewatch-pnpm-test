@@ -1,0 +1,14 @@
+{
+  "name": "@monorepo/main",
+  "private": true,
+  "scripts": {
+    "res:build": "rescript",
+    "res:clean": "rescript clean",
+    "res:dev": "rescript -w"
+  },
+  "dependencies": {
+    "@monorepo/library": "workspace:*",
+    "@rescript/core": "^1.2.0",
+    "rescript": "^11.1.0-rc.7"
+  }
+}
