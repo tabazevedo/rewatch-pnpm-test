@@ -8,6 +8,11 @@
   },
   "dependencies": {
     "@rescript/core": "^1.2.0",
+    "@rescriptbr/reform": "^12.1.0",
+    "@rescriptbr/reschema": "^3.0.3",
     "rescript": "^11.1.0-rc.7"
+  },
+  "devDependencies": {
+    "lenses-ppx": "^6.1.10"
   }
 }

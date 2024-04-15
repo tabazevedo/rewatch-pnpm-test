@@ -2,7 +2,7 @@
 
 
 function log(x) {
-  console.log("message:: " + x);
+  console.log(x);
 }
 
 export {

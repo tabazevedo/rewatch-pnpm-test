@@ -10,9 +10,13 @@
   },
   "suffix": ".res.mjs",
   "bs-dependencies": [
+    "@rescriptbr/reform",
+    "@rescriptbr/reschema",
     "@rescript/core"
   ],
   "bsc-flags": [
     "-open RescriptCore"
-  ]
+  ],
+  "ppx-flags": ["lenses-ppx/ppx"],
+  "uncurried": false
 }
